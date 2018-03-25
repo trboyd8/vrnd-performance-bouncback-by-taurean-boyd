@@ -11,11 +11,6 @@ public class Trampoline : MonoBehaviour {
 	void Start () {
         pSystem = GetComponentInChildren<ParticleSystem>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
 
     void OnCollisionEnter(Collision col)
     {
