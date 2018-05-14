@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trampoline : MonoBehaviour {
 
-    public ParticleSystem pSystem;
+    private ParticleSystem pSystem;
     public GameManager gameManager;
 
 	// Use this for initialization
@@ -17,7 +17,7 @@ public class Trampoline : MonoBehaviour {
         if (col.gameObject.CompareTag("Throwable"))
         {
             //Score Point
-            gameManager.score++;
+            gameManager.IncrementScore();
 
             //Particle effect
             pSystem.Play();
